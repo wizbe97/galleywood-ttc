@@ -1,5 +1,5 @@
 #about {
-    min-height: 15vh; /* This ensures that the container takes at least the full viewport height */
+    min-height: 15vh;
     color: aliceblue;
 }
 
@@ -17,7 +17,7 @@
     justify-content: center;
 }
 
-#practice{
+#practice {
     background-color: rgb(173, 57, 57);
     margin-left: 10%;
     margin-right: 10%;
@@ -44,5 +44,5 @@
 }
 
 #location p {
-    margin: 1px 0; /* Adjust the margin as needed to control the gap between paragraphs */
+    margin: 1px 0;
 }
