@@ -1,0 +1,48 @@
+#about {
+    min-height: 15vh; /* This ensures that the container takes at least the full viewport height */
+    color: aliceblue;
+}
+
+#welcome {
+    background-color: rgb(152, 51, 51);
+    margin-left: 10%;
+    margin-right: 10%;
+    position: relative;
+    padding-top: 3%;
+    padding-left: 3%;
+    padding-right: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#practice{
+    background-color: rgb(173, 57, 57);
+    margin-left: 10%;
+    margin-right: 10%;
+    position: relative;
+    padding-top: 3%;
+    padding-left: 3%;
+    padding-right: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#location {
+    background-color: rgb(152, 51, 51);
+    margin-left: 10%;
+    margin-right: 10%;
+    position: relative;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#location p {
+    margin: 1px 0; /* Adjust the margin as needed to control the gap between paragraphs */
+}
