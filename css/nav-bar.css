@@ -1,19 +1,51 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/background-color.png');
+}
+
+
+#footer {
+    background-color: rgb(22, 22, 22);
+    color: white;
+    font-size: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    position: relative;
+    padding-top: 3%;
+    padding-left: 3%;
+    padding-right: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+/* Header styles */
 header {
     width: 100%;
-    max-height: 500px; /* Set your desired maximum height */
-    overflow: hidden; /* Hide any overflow if the image is larger than the max height */
+    max-height: 500px;
+    overflow: hidden;
+    background-image: url('../images/background-color.png');
+    background-size: cover;
+    background-position: center;
 }
 
 header img {
     width: 100%;
     height: auto;
     display: block;
-    margin: 0 auto; /* Center the image */
 }
 
+/* Navigation styles */
 nav {
-    background-color: #333;
+    top: 0;
+    width: 100%;
+    background-color: #1b1919;
     overflow: hidden;
+    z-index: 1000;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 
 nav a {
@@ -21,7 +53,7 @@ nav a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 10px 16px;
     text-decoration: none;
 }
 
@@ -34,33 +66,26 @@ nav a:hover {
 .dropdown {
     float: left;
     overflow: hidden;
+    z-index: 2; /* Increase the z-index to ensure the dropdown is above other elements */
 }
 
-.dropbtn {
-    font-size: 16px;  
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-}
-
+/* Show the dropdown content when the "show" class is present */
 .dropdown-content {
     display: none;
     position: absolute;
     background-color: #333;
     min-width: 160px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 3; /* Increase the z-index to ensure the dropdown is above other elements */
 }
 
-.dropdown-content a {
-    color: white;
-    padding: 12px 16px;
-    display: block;
-    text-decoration: none;
-    text-align: left;
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #302f2f;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1001; /* Add a higher z-index value than the navigation bar */
 }
 
 .dropdown-content a:hover {
@@ -68,6 +93,35 @@ nav a:hover {
     color: black;
 }
 
-.dropdown:hover .dropdown-content {
-    display: block;
+/* Sticky navigation styles */
+nav.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #1b1919; /* Set the background color to the desired non-transparent color */
+    color: white;
+}
+
+/* Adjust the hover behavior for the dropdown button */
+.dropbtn {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: normal; /* Adjust as needed */
+    line-height: 16.1px; /* Adjust as needed */
+    letter-spacing: 1px; /* Adjust as needed */
+    border: none;
+    outline: none;
+    color: white;
+    padding: 10px 16px;
+    background-color: inherit;
+    margin: 0;
+    cursor: pointer;
+}
+
+.dropbtn:hover,
+.dropdown.clicked .dropbtn {
+    background-color: #ddd;
+    color: black;
+    font-weight: bold;
 }
