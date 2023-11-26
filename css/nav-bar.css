@@ -1,7 +1,6 @@
 /* Header styles */
 header {
     text-align: center; /* Center the content within the header */
-    max-width: 80%; /* Set the desired width for the header */
     margin: 0 auto; /* Center the header in the page */
     overflow: hidden;
     background-image: url('../images/background-color.png');
@@ -11,15 +10,14 @@ header {
 }
 
 header img {
-    width: 100%;
     height: auto;
     display: block;
+    width: 100%;
 }
 
 /* Navigation styles */
 nav {
     margin: 0 auto; /* Center the navbar in the page */
-    width: 80%; /* Set the desired width for the navbar */
     background-color: #1b1919;
     overflow: hidden;
     z-index: 1000;

@@ -5,8 +5,6 @@
 
 #welcome {
     background-color: rgb(152, 51, 51);
-    margin-left: 10%;
-    margin-right: 10%;
     position: relative;
     padding-top: 3%;
     padding-left: 3%;
@@ -19,8 +17,6 @@
 
 #practice {
     background-color: rgb(173, 57, 57);
-    margin-left: 10%;
-    margin-right: 10%;
     position: relative;
     padding-top: 3%;
     padding-left: 3%;
@@ -33,8 +29,6 @@
 
 #location {
     background-color: rgb(152, 51, 51);
-    margin-left: 10%;
-    margin-right: 10%;
     position: relative;
     padding: 3%;
     display: flex;
@@ -45,8 +39,6 @@
 
 #contact-header {
     background-color: rgb(152, 51, 51);
-    margin-left: 10%;
-    margin-right: 10%;
     position: relative;
     padding-top: 1%;
     padding-left: 3%;
@@ -62,8 +54,6 @@
 
 #contact-div {
     background-color: rgb(152, 51, 51);
-    margin-left: 10%;
-    margin-right: 10%;
     position: relative;
     padding: 3%;
     display: flex;
@@ -83,8 +73,6 @@
     background-color: rgb(152, 51, 51);
     position: relative;
     justify-content: space-between; /* Adjust as needed */
-    margin-left: 10%;
-    margin-right: 10%;
     padding-bottom: 3%;
     padding-left: 4%;
     padding-right: 4%;
