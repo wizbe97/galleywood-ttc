@@ -1,6 +1,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
+    margin-left: 10%;
+    margin-right: 10%;
     padding: 0;
     background-image: url('../images/background-color.png');
 }
@@ -10,8 +11,6 @@ body {
     background-color: rgb(22, 22, 22);
     color: white;
     font-size: 10px;
-    margin-left: 10%;
-    margin-right: 10%;
     margin-bottom: 0.1%;
     position: relative;
     padding-top: 2%;
@@ -22,4 +21,16 @@ body {
     flex-direction: column;
     align-items: left;
     justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    header {
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
