@@ -119,4 +119,26 @@ p[style*="text-decoration: underline;"] {
     }
 }
 
+/* Add these styles to your CSS */
+@media (min-width: 769px) {
+    /* Apply the existing styles for larger screens */
+    .about {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
 
+    #footer,
+    header {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    nav {
+        width: 80%;
+    }
+
+    .contact-container {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
