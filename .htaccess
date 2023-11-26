@@ -1,11 +1,10 @@
 RewriteEngine On
 
-# Redirect /example.html to /example
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)\.html$ /$1 [L,R=301]
+# Redirect requests with .html to non-.html URLs
+RewriteCond %{THE_REQUEST} \.html [NC]
+RewriteRule ^(.+)\.html$ /$1 [R=301,L]
 
-# Rewrite requests to append .html
-RewriteCond %{REQUEST_FILENAME} !-f
+# Rewrite requests without .html to append .html
 RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.html [NC,L]
