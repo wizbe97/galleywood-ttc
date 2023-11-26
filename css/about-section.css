@@ -85,6 +85,8 @@
     margin-right: 10%;
     padding-left: 3%;
     padding-right: 3%;
+    color: inherit !important;
+    text-decoration: none !important;
 }
 
 /* Apply responsive styles using media queries */
@@ -94,6 +96,8 @@
         align-items: center; /* Center items horizontally when stacked */
         justify-content: center; /* Center items vertically when stacked */
         text-align: center; /* Center text within each contact-info div */
+        color: inherit !important;
+        text-decoration: none !important;
     }
 
     /* Explicitly set width for each contact-info div */
