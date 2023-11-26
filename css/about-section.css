@@ -1,4 +1,4 @@
-#about {
+.about {
     min-height: 15vh;
     color: aliceblue;
 }
@@ -43,6 +43,71 @@
     justify-content: center;
 }
 
+#contact-header {
+    background-color: rgb(152, 51, 51);
+    margin-left: 10%;
+    margin-right: 10%;
+    position: relative;
+    padding-top: 1%;
+    padding-left: 3%;
+    padding-right: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact-div {
+    background-color: rgb(152, 51, 51);
+    margin-left: 10%;
+    margin-right: 10%;
+    position: relative;
+    padding-top: 3%;
+    padding-left: 3%;
+    padding-right: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 #location p {
     margin: 1px 0;
 }
+
+/* Add these styles to your CSS */
+.contact-container {
+    display: flex;
+    background-color: rgb(152, 51, 51);
+    position: relative;
+    justify-content: space-between; /* Adjust as needed */
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-left: 3%;
+    padding-right: 3%;
+    color: inherit !important;
+    text-decoration: none !important;
+}
+
+/* Apply responsive styles using media queries */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center; /* Center items horizontally when stacked */
+        justify-content: center; /* Center items vertically when stacked */
+        text-align: center; /* Center text within each contact-info div */
+        color: inherit !important;
+        text-decoration: none !important;
+    }
+
+    /* Explicitly set width for each contact-info div */
+    #contact-info1,
+    #contact-info2,
+    #contact-info3 {
+        width: 100%; /* Adjust as needed */
+        box-sizing: border-box; /* Include padding and border in the total width and height */
+        margin-bottom: 10px; /* Optional: Add some spacing between stacked items */
+    }
+}
+
+
